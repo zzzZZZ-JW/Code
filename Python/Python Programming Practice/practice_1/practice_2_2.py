@@ -1,0 +1,12 @@
+import turtle
+a,b = eval(input("请输入矩形的长度和宽度:"))
+turtle.penup()
+turtle.setposition(-a/2, -b/2)
+turtle.pendown()
+turtle.fd(a)
+turtle.left(90)
+turtle.fd(b)
+turtle.left(90)
+turtle.fd(a)
+turtle.left(90)
+turtle.fd(b)

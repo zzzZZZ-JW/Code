@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/workspace.xml
+.idea/**/workspace.xml
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# C/C++ build outputs
+*.o
+*.out
+*.exe
+*.dSYM/
+build/
+cmake-build-*/
+C Programming Language/**/main
+
+# Archives and large course data
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+Micro-specialization/NVIDIA_CV_Inspection/ngc_assets/ngc-cli/
+
+# Nested repository metadata backed up before creating the top-level repo
+**/.git.backup-before-code-repo/
+
+# Xcode user/local state
+xcuserdata/
+*.xcuserstate
+DerivedData/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
