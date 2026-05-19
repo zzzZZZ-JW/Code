@@ -45,3 +45,7 @@ DerivedData/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+# Local notebooks containing personal API keys
+Micro-specialization/NVIDIA_CV_Inspection/00_introduction.ipynb
+Micro-specialization/NVIDIA_RAG_Course/Untitled2.ipynb
