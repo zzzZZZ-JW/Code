@@ -19,5 +19,5 @@ s = Student("2506456052","张佳伟",date(2007,2,27))
 
 print(s.student_id)
 print(s.name)
-print(birthday)
+print(s.birthday)
 print(s.get_age())
