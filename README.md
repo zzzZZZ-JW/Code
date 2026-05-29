@@ -7,7 +7,7 @@
 | 目录 | 说明 |
 | --- | --- |
 | `C Programming Language` | C 语言程序设计课程的作业代码 |
-| `Micro-specialization` | 微专业课程相关代码和资料 |
+| `Micro-specialization` | 微专业课程相关代码和资料（已移除） |
 | `Python/Python Programming Practice` | Python 程序设计实践课程代码 |
 | `Python/Python Programming` | Python 程序设计课程代码 |
 
