@@ -150,6 +150,7 @@ poem_title_label = tk.Label(root, text="", font=("宋体", 16))
 poem_content_label = tk.Label(root, text="", font=("宋体", 18), justify="center")
 
 answer_entry = tk.Entry(root, font=("宋体", 16))
+answer_entry.bind("<Return>", lambda event: check_answer())
 
 submit_button = tk.Button(root, text="提交答案", font=("宋体", 14), command=check_answer)
 next_button = tk.Button(root, text="下一题", font=("宋体", 14), command=start_practice)
@@ -157,7 +158,6 @@ end_button = tk.Button(root, text="结束答题", font=("宋体", 14), command=e
 result_label = tk.Label(root, text="", font=("宋体", 14))
 
 root.mainloop()
-
 
 
 
