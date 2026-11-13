@@ -1,0 +1,76 @@
+K=5; train=10000; test=500; features=(2, 5, 10, 15, 21)
+START pass=1 features=2 model=KDTree
+DONE  pass=1 features=2 model=KDTree train=0.009821s predict=0.017172s calls=26160 accuracy=0.8680 f1=0.0000 NOTE=ZeroDivisionError: division by zero; zero_division=0
+START pass=1 features=2 model=BruteForce
+DONE  pass=1 features=2 model=BruteForce train=0.001660s predict=1.881918s calls=5000000 accuracy=0.8680 f1=0.0000 NOTE=ZeroDivisionError: division by zero; zero_division=0
+COMPARE pass=1 features=2 prediction_differences=0
+START pass=1 features=5 model=BruteForce
+DONE  pass=1 features=5 model=BruteForce train=0.001826s predict=2.805128s calls=5000000 accuracy=0.8520 f1=0.2292
+START pass=1 features=5 model=KDTree
+DONE  pass=1 features=5 model=KDTree train=0.011231s predict=0.109863s calls=136437 accuracy=0.8540 f1=0.3178
+COMPARE pass=1 features=5 prediction_differences=49
+START pass=1 features=10 model=KDTree
+DONE  pass=1 features=10 model=KDTree train=0.012208s predict=0.728432s calls=702603 accuracy=0.8660 f1=0.2947
+START pass=1 features=10 model=BruteForce
+DONE  pass=1 features=10 model=BruteForce train=0.001610s predict=3.996444s calls=5000000 accuracy=0.8720 f1=0.2889
+COMPARE pass=1 features=10 prediction_differences=27
+START pass=1 features=15 model=BruteForce
+DONE  pass=1 features=15 model=BruteForce train=0.001814s predict=5.053085s calls=5000000 accuracy=0.8720 f1=0.4182
+START pass=1 features=15 model=KDTree
+DONE  pass=1 features=15 model=KDTree train=0.012662s predict=2.752952s calls=2119602 accuracy=0.8560 f1=0.3455
+COMPARE pass=1 features=15 prediction_differences=26
+START pass=1 features=21 model=KDTree
+DONE  pass=1 features=21 model=KDTree train=0.014018s predict=5.870045s calls=3519640 accuracy=0.8520 f1=0.2745
+START pass=1 features=21 model=BruteForce
+DONE  pass=1 features=21 model=BruteForce train=0.001866s predict=6.675528s calls=5000000 accuracy=0.8380 f1=0.2136
+COMPARE pass=1 features=21 prediction_differences=11
+START pass=2 features=21 model=BruteForce
+DONE  pass=2 features=21 model=BruteForce train=0.001936s predict=6.736631s calls=5000000 accuracy=0.8380 f1=0.2136
+START pass=2 features=21 model=KDTree
+DONE  pass=2 features=21 model=KDTree train=0.014690s predict=5.875935s calls=3519640 accuracy=0.8520 f1=0.2745
+COMPARE pass=2 features=21 prediction_differences=11
+START pass=2 features=15 model=KDTree
+DONE  pass=2 features=15 model=KDTree train=0.013485s predict=2.924074s calls=2119602 accuracy=0.8560 f1=0.3455
+START pass=2 features=15 model=BruteForce
+DONE  pass=2 features=15 model=BruteForce train=0.001895s predict=5.188056s calls=5000000 accuracy=0.8720 f1=0.4182
+COMPARE pass=2 features=15 prediction_differences=26
+START pass=2 features=10 model=BruteForce
+DONE  pass=2 features=10 model=BruteForce train=0.001900s predict=3.962899s calls=5000000 accuracy=0.8720 f1=0.2889
+START pass=2 features=10 model=KDTree
+DONE  pass=2 features=10 model=KDTree train=0.011569s predict=0.786185s calls=702603 accuracy=0.8660 f1=0.2947
+COMPARE pass=2 features=10 prediction_differences=27
+START pass=2 features=5 model=KDTree
+DONE  pass=2 features=5 model=KDTree train=0.012300s predict=0.123185s calls=136437 accuracy=0.8540 f1=0.3178
+START pass=2 features=5 model=BruteForce
+DONE  pass=2 features=5 model=BruteForce train=0.001584s predict=3.090966s calls=5000000 accuracy=0.8520 f1=0.2292
+COMPARE pass=2 features=5 prediction_differences=49
+START pass=2 features=2 model=BruteForce
+DONE  pass=2 features=2 model=BruteForce train=0.001455s predict=1.941585s calls=5000000 accuracy=0.8680 f1=0.0000 NOTE=ZeroDivisionError: division by zero; zero_division=0
+START pass=2 features=2 model=KDTree
+DONE  pass=2 features=2 model=KDTree train=0.009881s predict=0.017702s calls=26160 accuracy=0.8680 f1=0.0000 NOTE=ZeroDivisionError: division by zero; zero_division=0
+COMPARE pass=2 features=2 prediction_differences=0
+START pass=3 features=2 model=KDTree
+DONE  pass=3 features=2 model=KDTree train=0.009995s predict=0.017832s calls=26160 accuracy=0.8680 f1=0.0000 NOTE=ZeroDivisionError: division by zero; zero_division=0
+START pass=3 features=2 model=BruteForce
+DONE  pass=3 features=2 model=BruteForce train=0.001416s predict=1.936614s calls=5000000 accuracy=0.8680 f1=0.0000 NOTE=ZeroDivisionError: division by zero; zero_division=0
+COMPARE pass=3 features=2 prediction_differences=0
+START pass=3 features=5 model=BruteForce
+DONE  pass=3 features=5 model=BruteForce train=0.001598s predict=2.875756s calls=5000000 accuracy=0.8520 f1=0.2292
+START pass=3 features=5 model=KDTree
+DONE  pass=3 features=5 model=KDTree train=0.011903s predict=0.118256s calls=136437 accuracy=0.8540 f1=0.3178
+COMPARE pass=3 features=5 prediction_differences=49
+START pass=3 features=10 model=KDTree
+DONE  pass=3 features=10 model=KDTree train=0.013095s predict=0.744314s calls=702603 accuracy=0.8660 f1=0.2947
+START pass=3 features=10 model=BruteForce
+DONE  pass=3 features=10 model=BruteForce train=0.001734s predict=4.010845s calls=5000000 accuracy=0.8720 f1=0.2889
+COMPARE pass=3 features=10 prediction_differences=27
+START pass=3 features=15 model=BruteForce
+DONE  pass=3 features=15 model=BruteForce train=0.001761s predict=5.125893s calls=5000000 accuracy=0.8720 f1=0.4182
+START pass=3 features=15 model=KDTree
+DONE  pass=3 features=15 model=KDTree train=0.012602s predict=2.949221s calls=2119602 accuracy=0.8560 f1=0.3455
+COMPARE pass=3 features=15 prediction_differences=26
+START pass=3 features=21 model=KDTree
+DONE  pass=3 features=21 model=KDTree train=0.014217s predict=5.732930s calls=3519640 accuracy=0.8520 f1=0.2745
+START pass=3 features=21 model=BruteForce
+DONE  pass=3 features=21 model=BruteForce train=0.001924s predict=6.851627s calls=5000000 accuracy=0.8380 f1=0.2136
+COMPARE pass=3 features=21 prediction_differences=11

@@ -1,0 +1,72 @@
+{
+  "status": "completed",
+  "started_at": "2026-11-05T11:33:58.838207+08:00",
+  "python": "3.13.9 (v3.13.9:8183fa5e3f7, Oct 14 2025, 10:27:13) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "python_executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "timer": "time.perf_counter; fit/predict only",
+  "repeats": 3,
+  "feature_counts": [
+    2,
+    7,
+    10,
+    15,
+    17
+  ],
+  "k": 5,
+  "sampling": "first rows in each teacher CSV, no shuffle or scaling",
+  "order": "reverse feature order on even passes; alternate model order",
+  "warmup": "no separate warm-up; all measured passes retained",
+  "metric_policy": "original evaluator; on ZeroDivisionError record error and use zero_division=0",
+  "data_source": "/Users/zhangjiawei/Library/CloudStorage/OneDrive-个人/资料/数据结构/2026-10-15",
+  "files_sha256": {
+    "diabetes_imb_train.csv": "db4ae2c16830586f33c4286e7b528e7ee81b33b969f2f359002e6eb5a22fddff",
+    "diabetes_imb_test.csv": "162a181d8da4da29ab61de12b57296f577eaf0024e7452c25b77c22a1fd4980f",
+    "KNNmodel_train_predict_need_comment.py": "d3db452de1b417a5dec4370ef8b3ec44d561b4a2ebcdd54317e592542a4c744c",
+    "KNNmodel_train_predict_type2.py": "bfdaa56f5440237e71c70bfa762da4fd1bebf501e942a61334e199a728057dd5",
+    "KNNmodel_train_predict_annotated.py": "2b4f95b8cc067b94d351b6bd3415ff6d6cc21a71bc33694211665c6305d9ed59",
+    "run_feature_experiments.py": "459f9e389d811ba04e446f2d9bc0c0be82abcf1e845c6813dbc651b202bd2a3d"
+  },
+  "cpu": "Apple M4 Pro",
+  "full_rows": {
+    "train": 152208,
+    "test": 50736
+  },
+  "train_samples": 10000,
+  "test_samples": 500,
+  "feature_names": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "train_labels": {
+    "0": 8595,
+    "1": 1405
+  },
+  "test_labels": {
+    "0": 434,
+    "1": 66
+  },
+  "ended_at": "2026-11-05T11:35:22.256344+08:00",
+  "elapsed_seconds": 83.41790345899062,
+  "measurement_count": 30
+}

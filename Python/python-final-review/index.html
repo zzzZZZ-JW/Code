@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python 期末复习诊断</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./questions.js" defer></script>
+    <script src="./extra-questions.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="side-rail" aria-label="复习概览">
+        <div class="brand-block">
+          <p class="eyebrow">Python Final Lab</p>
+          <h1>期末复习诊断</h1>
+          <p class="term">选择 · 填空 · 编程</p>
+        </div>
+
+        <nav class="tab-list" aria-label="主视图">
+          <button class="tab-button is-active" data-view="practice">练习</button>
+          <button class="tab-button" data-view="map">知识点</button>
+          <button class="tab-button" data-view="wrong">错题本</button>
+        </nav>
+
+        <section class="deck-panel" aria-label="题库信息">
+          <div>
+            <span class="metric-label">题库</span>
+            <strong id="totalQuestionCount">0</strong>
+          </div>
+          <div>
+            <span class="metric-label">错题</span>
+            <strong id="wrongCount">0</strong>
+          </div>
+        </section>
+
+        <section class="focus-panel" aria-label="复习提示">
+          <p class="eyebrow">Exam Style</p>
+          <p>新增复习题(2)风格：挖空补代码、程序阅读、纠错题、综合编程。</p>
+        </section>
+
+        <section class="summary-panel" aria-label="总体统计">
+          <div>
+            <span class="metric-label">已答</span>
+            <strong id="answeredCount">0</strong>
+          </div>
+          <div>
+            <span class="metric-label">正确率</span>
+            <strong id="accuracyRate">0%</strong>
+          </div>
+          <div>
+            <span class="metric-label">掌握</span>
+            <strong id="masteredCount">0</strong>
+          </div>
+        </section>
+      </aside>
+
+      <main class="workspace">
+        <section class="topline" aria-label="筛选">
+          <div class="select-row">
+            <label>
+              知识点
+              <select id="topicFilter"></select>
+            </label>
+            <label>
+              题型
+              <select id="typeFilter">
+                <option value="all">全部题型</option>
+                <option value="choice">选择题</option>
+                <option value="fill">填空题</option>
+                <option value="debug">纠错题</option>
+                <option value="code">编程题</option>
+              </select>
+            </label>
+            <label>
+              模式
+              <select id="modeSelect">
+                <option value="adaptive">薄弱优先</option>
+                <option value="shuffle">随机练习</option>
+                <option value="ordered">顺序刷题</option>
+              </select>
+            </label>
+          </div>
+          <div class="top-actions">
+            <button class="ghost-button" id="resetFilters">重置筛选</button>
+            <button class="danger-button" id="resetProgress">清空记录</button>
+          </div>
+        </section>
+
+        <section class="view is-visible" id="practiceView" aria-label="练习区">
+          <div class="status-band">
+            <div>
+              <p class="eyebrow">当前建议</p>
+              <h2 id="recommendationTitle">先做一题诊断</h2>
+            </div>
+            <div class="status-list" id="weakTopicList"></div>
+          </div>
+
+          <article class="quiz-tool">
+            <header class="question-head">
+              <div class="chips">
+                <span class="chip" id="typeChip">选择题</span>
+                <span class="chip topic-chip" id="topicChip">基础语法</span>
+                <span class="chip source-chip" id="sourceChip">作业</span>
+              </div>
+              <div class="question-counter" id="questionCounter">1 / 1</div>
+            </header>
+
+            <div class="prompt-block">
+              <h2 id="questionPrompt"></h2>
+              <pre id="questionCode" class="code-block hidden"></pre>
+            </div>
+
+            <form id="answerForm" class="answer-area"></form>
+
+            <section class="feedback-panel hidden" id="feedbackPanel" aria-live="polite">
+              <div class="feedback-title" id="feedbackTitle"></div>
+              <div id="feedbackBody"></div>
+            </section>
+
+            <footer class="quiz-actions">
+              <button class="primary-button" id="submitAnswer" type="button">提交</button>
+              <button class="ghost-button" id="revealAnswer" type="button">看答案</button>
+              <button class="ghost-button" id="nextQuestion" type="button">下一题</button>
+            </footer>
+          </article>
+        </section>
+
+        <section class="view" id="mapView" aria-label="知识点掌握度">
+          <div class="section-title">
+            <p class="eyebrow">Knowledge Map</p>
+            <h2>知识点掌握度</h2>
+          </div>
+          <div class="topic-grid" id="topicGrid"></div>
+        </section>
+
+        <section class="view" id="wrongView" aria-label="错题本">
+          <div class="section-title">
+            <p class="eyebrow">Mistake Notebook</p>
+            <h2>错题本</h2>
+          </div>
+          <div class="wrong-list" id="wrongList"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

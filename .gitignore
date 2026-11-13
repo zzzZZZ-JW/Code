@@ -26,6 +26,12 @@ __pycache__/
 build/
 cmake-build-*/
 C Programming Language/**/main
+Data Structures/2026-11-9/graph_code_c
+Data Structures/2026-11-9/graph_weighted_c
+Data Structures/2026-9-1/P5708/P5708
+
+# Reproducible NumPy result archive
+Data Structures/2026-11-12/results/results.npz
 
 # Archives and large course data
 *.zip
